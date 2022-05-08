@@ -1,5 +1,5 @@
 
 {
-    "mongoURI": "mongodb+srv://laiba:laiba@shoppinglistdb.8on9h.mongodb.net/test",
-    "jwtSecret": "JWTSECRET_MERN"
+    "mongoURI": "<add connection string here>",
+    "jwtSecret": "<add secret here>"
 }
