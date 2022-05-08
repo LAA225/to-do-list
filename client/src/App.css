@@ -1,0 +1,85 @@
+.footer {
+    position: sticky;
+    background-color: #212529;;
+    padding: 0.5rem;
+    text-align: center;
+    top: 100%;
+}
+
+.footer p{
+    color:beige;
+    padding: 0.5rem;
+}
+
+body {
+    background-image: url('./img/notebook.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0;
+    min-height: 100vh;
+
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+} */
+
+.remove-btn {
+    margin-right: .5 rem;
+}
+
+@keyframes moving {
+    from {transform: translateX(15px);}
+    to {transform: translateX(0px);}
+}
+
+.fades-enter {
+    opacity: 0.01;
+    -webkit-animation: moving 200ms ease-in;
+    animation: moving 200ms ease-in;
+}
+
+.fades-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.fades-exit {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.fades-exit-active {
+    opacity: 0.01;
+    transform: translateX(15px);
+    transition: opacity 200ms ease-in, transform 200ms ease-out;
+}
+
+.generalAlert-enter {
+    transform: translateX(0px);
+}
+
+.generalAlert-enter-active {
+    transform: translateX(15px);
+    transition: transform 500ms ease-in;
+}
+
+.generalAlert-exit {
+    transform: translateX(15px);
+    
+}
+
+.generalAlert-exit-active {
+    transform: translateX(0px);
+    transition: transform 500ms ease-out;
+}
+
+
+
